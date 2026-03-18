@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(220, 219, 219);
+  text-align: center;
+  padding-top: 5%;
+}
+
+main {
+  height: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #015254;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px rgb(185, 184, 184);
+}
+
+#content {
+  margin: 0 auto 5%;
+  width: 50%;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 5px 5px 6px -6px #000000;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: bold;
+}
+
+#text-input {
+  height: 50%;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+#text-input:focus {
+  box-shadow: 5px 5px 6px -6px #000000;
+  border: 2px solid #015254;
+  outline: none;
+}
+
+#add-btn {
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+}
+
+#add-btn:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+}
+
+#add-btn:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+}
+
+.task-container {
+  border-radius: 10px;
+  background-color: #015354c6;
+  color: white;
+  padding: 1rem;
+  width: fit-content;
+  margin: 2rem;
+  display: inline-block;
+  box-shadow: 5px 5px 6px -6px #000000;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.task-container p {
+  display: inline;
+  margin: 0 1rem;
+}
+
+.checked p {
+  text-decoration: line-through;
+}
+
+.remove-task-btn {
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid white;
+  box-shadow: 0 0 0 0 white;
+}
+
+.remove-task-btn:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+}
+
+.remove-task-btn:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+}
