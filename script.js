@@ -4,6 +4,7 @@ const listContainer = document.getElementById("list-container");
 const removeBtns = document.querySelectorAll(".remove-task-btn");
 const checkboxes = document.querySelectorAll(".checkbox");
 const form = document.querySelector("form");
+const icon = document.getElementById("ciao");
 
 const appendNewTask = (e) => {
   e.preventDefault();
@@ -16,7 +17,7 @@ const appendNewTask = (e) => {
   newTask.innerHTML = `
     <input type="checkbox" class="checkbox" onchange="lineThrough(event)"/>
     <p class="task-p">${input.value}</p>
-    <button class="remove-task-btn" onclick="removeTask(event)"><i class="fas fa-trash" onclick="removeTaskIcon(event)"></i></button>
+    <button class="remove-task-btn" onclick="removeTask(event)"><i id="ciao" class="fas fa-trash icon""></i></button>
     `;
   listContainer.appendChild(newTask);
   form.reset();
@@ -24,10 +25,6 @@ const appendNewTask = (e) => {
 
 const removeTask = (e) => {
   e.target.parentElement.remove();
-};
-
-const removeTaskIcon = (e) => {
-  e.target.parentElement.parentElement.remove();
 };
 
 const lineThrough = (e) => {
