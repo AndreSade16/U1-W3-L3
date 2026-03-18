@@ -17,7 +17,7 @@ const appendNewTask = (e) => {
   newTask.innerHTML = `
     <input type="checkbox" class="checkbox" onchange="lineThrough(event)"/>
     <p class="task-p">${input.value}</p>
-    <button class="remove-task-btn" onclick="removeTask(event)"><i id="ciao" class="fas fa-trash icon""></i></button>
+    <button class="remove-task-btn" onclick="removeTask(event)"><i id="ciao" class="fas fa-trash icon"></i></button>
     `;
   listContainer.appendChild(newTask);
   form.reset();
